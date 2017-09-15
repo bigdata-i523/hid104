@@ -6,6 +6,7 @@
 
 * 09/01/17 Read and watched videos in the Theory Introduction page
 * 09/15/17 Read and watched videos in the Theory Overview of Data Science page
+* 09/15/17 Downloaded and installed LaTex from https://miktex.org/download
 
 # Practice
 
