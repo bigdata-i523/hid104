@@ -19,7 +19,7 @@ paper1:
    - 104
    title: What Separates "Big Data" from "Lots of Data"?
    abstract: This paper will briefly analyze the history of data to show how having “lots of data” stored in giant databases hardly differs from data storage and analysis in the early days of SQL, or even before computers. The paper will then explain how “big data” represents a paradigmatic shift from traditional large data storage and analysis.
-   url:
+   url: https://github.com/bigdata-i523/hid104/paper1/paper1.pdf
    type: LaTeX
 ```
    
@@ -33,7 +33,7 @@ paper2:
    - 104
    title: Big Data and Poverty in Developing Countries
    abstract: TBD
-   url:
+   url: https://github.com/bigdata-i523/hid104/paper2/paper2.pdf
    type: LaTeX
 ```
 
@@ -52,6 +52,6 @@ project:
    - 104
    title: TBD
    abstract: TBD
-   url:
+   url: https://github.com/bigdata-i523/hid104/project/project.pdf
 ```
    
