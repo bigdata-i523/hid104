@@ -4,7 +4,8 @@
 
 # Theory
 
-* 08/22/17 - 08/23/17 Read and watched all videos in the Theory Introduction section
+* 09/01/17 Read and watched videos in the Theory Introduction page
+* 09/15/17 Read and watched videos in the Theory Overview of Data Science page
 
 # Practice
 
@@ -13,4 +14,4 @@
 # Writing
 
 * 08/26/17 Selected paper 1 topic
-* 9/08/17 Downloaded ACM Templates
+* 09/08/17 Downloaded ACM Templates
