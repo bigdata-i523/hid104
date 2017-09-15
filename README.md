@@ -5,7 +5,7 @@
 ```
 owner:
     hid: 104
-    name: Gabriel Jones
+    name: Jones, Gabriel
     url: https://github.com/bigdata-i523/sample-hid104
 ```
 
@@ -14,7 +14,7 @@ owner:
 ```
 paper1:
    author: 
-   - Gabriel Jones
+   - Jones, Gabriel
    hid:
    - 104
    title: What Separates "Big Data" from "Lots of Data"?
@@ -28,7 +28,7 @@ paper1:
 ```
 paper2:
    author: 
-   - Gabriel Jones
+   - Jones, Gabriel
    hid:
    - 104
    title: Big Data and Poverty in Developing Countries
@@ -47,7 +47,7 @@ project:
    type: project
    type: report
    author: 
-   - Gabriel Jones
+   - Jones, Gabriel
    hid:
    - 104
    title: TBD
