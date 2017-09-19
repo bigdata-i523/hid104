@@ -6,7 +6,7 @@
 owner:
     hid: 104
     name: Jones, Gabriel
-    url: https://github.com/bigdata-i523/sample-hid104
+    url: https://github.com/bigdata-i523/hid104
 ```
 
 # Paper 1
