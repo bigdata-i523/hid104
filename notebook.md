@@ -1,6 +1,8 @@
+
 # Logistic
 
 * 08/21/17 Read the entire class overview section 
+* 9/28/17 Entered location section into notebook
 
 # Theory
 
@@ -16,3 +18,9 @@
 
 * 08/26/17 Selected paper 1 topic
 * 09/08/17 Downloaded ACM Templates
+* 09/22/17 Wrote Abstract
+
+# Location
+* Address: Bloomington IN, 800 N Union St #408
+* Latitude: 39.173551
+* Longitude: -86.509012 
