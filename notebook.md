@@ -2,7 +2,6 @@
 # Logistic
 
 * 08/21/17 Read the entire class overview section 
-* 9/28/17 Entered location section into notebook
 
 # Theory
 
@@ -21,6 +20,15 @@
 * 09/22/17 Wrote Abstract
 
 # Location
+
 * Address: Bloomington IN, 800 N Union St #408
 * Latitude: 39.173551
 * Longitude: -86.509012 
+
+# Meetings
+
+* 08/26/17 Meeting: Attended class meeting for residential students
+* 09/01/17 Meeting: Attended class meeting for residential students
+* 09/08/17 Meeting: Attended class meeting for residential students
+* 09/15/17 Meeting: Attended class meeting for residential students
+* 08/22/17 Meeting: Attended class meeting for residential students
