@@ -17,11 +17,18 @@ paper1:
    - Jones, Gabriel
    hid:
    - 104
-   title: What Separates "Big Data" from "Lots of Data"?
-   abstract: This paper will briefly analyze the history of data to show how having “lots of data” stored in giant databases hardly differs from data storage and analysis in the early days of SQL, or even before computers. The paper will then explain how “big data” represents a paradigmatic shift from traditional large data storage and analysis.
+   title: What Separates Big Data from Lots of Data?
+   abstract: >
+       This paper will briefly analyze the history of data to show how
+       having “lots of data” stored in giant databases hardly differs
+       from data storage and analysis in the early days of SQL, or even
+       before computers. The paper will then explain how “big data”
+       represents a paradigmatic shift from traditional large data storage
+       and analysis. 
    url: https://github.com/bigdata-i523/hid104/paper1/paper1.pdf
    type: LaTeX
    status: 5%
+   chapter: Theory
 ```
    
 # Paper 2
