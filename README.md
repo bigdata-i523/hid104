@@ -26,7 +26,7 @@ paper1:
        represents a paradigmatic shift from traditional large data storage
        and analysis. 
    url: https://github.com/bigdata-i523/hid104/paper1/paper1.pdf
-   type: laTeX
+   type: latex
    status: 5%
    chapter: Theory
 ```
@@ -42,7 +42,7 @@ paper2:
    title: Big Data and Poverty in Developing Countries
    abstract: TBD
    url: https://github.com/bigdata-i523/hid104/paper2/paper2.pdf
-   type: LaTeX
+   type: latex
    status: 0%
 ```
 
