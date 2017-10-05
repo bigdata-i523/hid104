@@ -26,7 +26,7 @@ paper1:
        represents a paradigmatic shift from traditional large data storage
        and analysis. 
    url: https://github.com/bigdata-i523/hid104/paper1/paper1.pdf
-   type: LaTeX
+   type: laTeX
    status: 5%
    chapter: Theory
 ```
