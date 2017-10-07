@@ -27,7 +27,7 @@ paper1:
        and analysis. 
    url: https://github.com/bigdata-i523/hid104/paper1/paper1.pdf
    type: latex
-   status: 5%
+   status: 90%
    chapter: Theory
 ```
    
