@@ -19,15 +19,19 @@ paper1:
    - 104
    title: What Separates Big Data from Lots of Data?
    abstract: >
-       This paper will briefly analyze the history of data to show how
-       having “lots of data” stored in giant databases hardly differs
-       from data storage and analysis in the early days of SQL, or even
-       before computers. The paper will then explain how “big data”
-       represents a paradigmatic shift from traditional large data storage
-       and analysis. 
+       We breifly analyze the history of data to show how having
+       Lots of Data hardly differs from data storage and analysis 
+       in the early days of SQL, or even before computers. We then
+       explain how Big Data represents a paradigmatic shift from
+       conventional data analysis. We then begin to look at the
+       potential limits of Big Data to assert that this paradigmatic
+       shift does not mean the end of science. We conclude that 
+       misunderstanding Big Data prevents organizations from
+       capitalizing on its potential and can lead them to spurious
+       answers.
    url: https://github.com/bigdata-i523/hid104/paper1/paper1.pdf
    type: latex
-   status: 90%
+   status: 100%
    chapter: Theory
 ```
    
