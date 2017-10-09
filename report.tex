@@ -1,0 +1,70 @@
+\documentclass[sigconf]{acmart}
+
+\usepackage{hyperref}
+
+\usepackage{endfloat}
+\renewcommand{\efloatseparator}{\mbox{}} % no new page between figures
+
+\usepackage{booktabs} % For formal tables
+
+\settopmatter{printacmref=false} % Removes citation information below abstract
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+\pagestyle{plain} % removes running headers
+
+\begin{document}
+\title{What Separates Big Data from Lots of Data }
+
+
+\author{Gabriel Jones}
+\orcid{1234-5678-9012}
+\affiliation{%
+  \institution{Indiana University}
+  \streetaddress{107 S Indiana Ave}
+  \city{Bloomington} 
+  \state{Indiana}
+  \country{USA}
+  \postcode{47405}
+}
+\email{gabejone@indiana.edu}
+
+% The default list of authors is too long for headers}
+\renewcommand{\shortauthors}{G. Jones}
+
+
+\begin{abstract}
+We briefly analyze the history of data to show how having {\em Lots of Data} hardly differs from data storage and analysis in the early days of SQL, or even before computers. We then explain how {\em Big Data} represents a paradigmatic shift from conventional data analysis. We then begin to look at the potential limits of {\em Big Data} to assert that this paradigmatic shift does not mean the end of science. We conclude that misunderstanding {\em Big Data} prevents organizations from capitalizing on its potential and can lead them to spurious answers.
+\end{abstract}
+
+\keywords{i523, hid104, Big Data, Lots of Data, Data Science, Data History, Sociotechnical}
+
+\maketitle
+
+\section{Introduction}
+In 2008, Wired.com published an article titled ''The End of Theory: The Data Deluge Makes the Scientific Method Obsolete.'' They tried to assert that {\em Big Data}, at that point still a relatively new term, was such a revolutionary change that the scientific method would no longer exist.\cite{Wired} Since at least 2008, professionals, scientists, and the public have flocked to the idea of {\em Big Data}, but many still struggle to understand both its grand potential and its realistic limits.\cite{Marr2} On one extreme, boasting terabytes of storage, they claim to be {\em Big Data} experts but only utilize {\em Lots of Data}, high quantities of traditional data. On the other extreme, they hyperbolize about how {\em Big Data} will change the world because it eliminates the need for educated hypothesizing, based on the fallacious assumption that {\em Big Data} is synonymous with {\em All Data}, implied by Wired.com and by some academics.\cite{Keystone}
+
+To avoid the common data deluge delusions, we borrow from a 2014 article written by Professor Carl Logoze, ''Big Data, Data Integrity, and the Fracturing of the Control Zone,'' that defines {\em Big Data} as ''data that disrupt fundamental notions of integrity and force new ways of thinking and doing to reestablish it.''\cite{Keystone} This definition both breaks the boundaries of {\em Lots of Data} and reins in the assumed panacea that leads people to believe they have {\em All Data}. Taking a brief look at the history of data clarifies what it means to have {\em Lots of Data}. A case study of the 1880s US Census Bureau demonstrates that mostly just volume and efficiency mark the difference between today's use of {\em Lots of Data} and the historical use of data in general, and how this differs from the definition and possibilities of {\em Big Data}. Having separated {\em Big Data} from an incorrectly limiting category, we then make the case for investigating what are the limits of {\em Big Data}. We briefly examine the basis for the argument that {\em Big Data} is not {\em All Data}, but a more rigorous analysis is beyond our current scope. We break down the first extreme, the synonymizing of {\em Big Data} with {\em Lots of Data}, by succinctly explaining how it represents a paradigmatic shift. We also hope to foster additional sociotechnical scholarly discussion and case studies of its limits, which would help break down the hyperbolic synonymizing of {\em Big Data} with {\em All Data}.
+
+\section{A Brief Look at the History of Data}
+The human ability to store and analyze data has evolved gradually over millennia. Although digital computer technology greatly accelerated this evolution, most mainstream uses of data still show signs of their historical roots. The formation of early libraries over 4,000 years ago signifies an important moment in methods of amassing data to be organized and processed by humans into knowledge.\cite{Data_History} Libraries still have prominence today both in the traditional sense, brick and mortar sites where one can study texts, and in a broader context, digital archives of algorithmically curated information. In either case, libraries are literal representations of information. If one wants to access a text, they can obtain a copy of it, physical or digital, and read the actual words of the text.\cite{Keystone} In contrast, another ancient technology, the abacus, demonstrates one of the first symbolic representations of data. The abacus uses an arrangement of beads to represent other numbers and calculations. The numbers themselves did not exist but were symbolically represented. This is an important early prerequisite to the emergence of statistics, which seeks to make accurate claims about a population based only on a sample.\cite{Data_History}
+
+	One of the first uses of the term business intelligence, a feature of statistical analysis, was used in the {\em 1865 Encyclopaedia of Commercial and Business Anecdotes}. The book described how a banker, Henry Furnese, gained an advantage over competitors by applying a structured method to collect and analyze information relevant to his business activities. Furnese's data analysis is considered one of the first of its kind for commercial purposes. It builds from the fundamental idea that the real world can be represented and analyzed symbolically, as a sample, to produce insights.\cite{Data_History} This is the same idea that allows, for instance, modern companies to provide performance bonuses to employees based on how well they meet certain criteria called Key Performance Indicators. It would be impossibly inefficient to have supervisors accurately observe every activity of every employee and objectively judge who made the most contributions, so instead, companies define metrics of good employee behavior and use these metrics to symbolically represent who adds the most value.
+
+	While being able to store and analyze data increased in importance near the end of the 19th century, the physical limits of storage and analysis, paper documents and human eyes, created a problem of {\em Lots of Data}. The US Census Bureau found themselves faced with this problem. As the US population skyrocketed, they estimated that with late 19th century methods, it would take an estimated 8 years to process the data collected in the 1880 census. Processing the 1890s census data, they predicted, would take over 10 years, so it would not be ready to study until becoming outdated by the 1900 census. The solution came from a young engineer named Herman Hollerith, eventual founder of IBM and creator of the Hollerith Tabulating Machine. His machine mechanically processed punch cards so efficiently it that reduced 10 years of work to three months.\cite{Data_History} Thus, he effectively solved the problem of volume, processing data for the entire US population, and of efficiency, since a few machines successfully completed what would have taken countless human hours.
+
+	Overcoming the Census Bureau challenge marks a key moment in the history of dealing with {\em Lots of Data}. With the advent of digital computing and languages like SQL, technologies have continually risen to the ever-greater demands for volume and efficiency.\cite{Rand} But armed with new technologies like web and mobile, society has created new types of relatively easily accessible data.\cite{Data_History} The inherently messy, unstructured, rapidly changing nature of this new data goes beyond what an abacus, a library, a Hollerith Machine, or a simple SQL database can handle. In addition to data volume and efficiency, {\em Big Data} introduces challenges of velocity, the unstable, constantly changing nature, and variety, the unification of datasets as distinct as website-eye mapping and social media network analysis.\cite{3Vs} This distinguishes itself from {\em Lots of Data}, a term whose significance depends mostly on perspective. Processing the census data used to be a challenge of {\em Lots of Data}, but with modern computing technology, storing and analyzing simple demographic data is relatively straightforward. {\em Big Data} offers no such historical asymmetry. Even as technology improves its capability of dealing with volume, the other factors that comprise {\em Big Data} will still pose challenges. In other words, a {\em Big Data} problem of yesterday is still a {\em Big Data} problem of today.
+
+\section{The Beginning of a New Era, but not The End of Science}
+As the history of data shows, {\em Big Data} is not just a buzz word. It has real meaning that separates it from past notions of data; it represents a paradigmatic shift in the way we approach the representation and analysis of information, so much so that notions of integrity have been revisited. But this realization can easily be taken too far. In their book, titled {\em Big Data}, Mayer-Schonberger and Cukier go as far as providing an omniscient mathematical formula for {\em Big Data}, {\em (n = all)}, where {\em n} is the sample size and all is the population.  They claim that {\em Big Data} represents all the data possibly available, with no limits on time, size, or variety, and therefore represents objective, absolute truth. The correlations we derive from {\em Big Data} therefore do not need proof of causation; the existence of a relationship or pattern in Big Data must be true of reality because {\em Big Data} is {\em All Data}.\cite{Keystone}
+
+	While {\em Big Data} certainly does change the norms of what it means to prove causation, the {\em (n = all)}  proposition falls short in theory and in practice. Numerous scholars argue that data, no matter what its size and complexity, is a sample, ''with bias implicit due to choice of instrumentation, span of observation, units of measurement, and numerous other factors. In essence, {\em n} never equals all; all is a limit in mathematical terms that can be approached but never attained.''\cite{Keystone} Ignoring the implicit uncertainty of dealing with a data sample can provide misleading conclusions. ''A well-known example of the foibles of the reliance on informally collected data and algorithmic projection is the Google Flu Trends (GFT), which raised huge scientific optimism about the predictive utility of informally collected data when first published in Nature in 2009 (Ginsberg et al., 2009). This optimism suffered a serious setback in 2013 when the GFT predictions for that year were shown to be seriously exaggerated (Butler, 2013; Lazer et al., 2014). A complete accounting for this setback is beyond the scope of this paper. However, one acknowledged factor is an overconfidence in the veracity of the data as a true sample of reality, rather than a random snapshot in time and the result of algorithmic dynamics.''\cite{Keystone} The grand miscalculations of GFT should not have come as a surprise. Researchers have long-since understood the fallibility of data samples. {\em Big Data}, while opening up new possibilities for discovery of new questions, still must be held to standards of methodological credibility. Despite the hyperbolic optimism of the 2008 Wired.com article, scientific methods, theories, and ways of thinking will still play an important role in discovery.
+
+\section{Conclusions}
+As the latest development in the long history of data, {\em Big Data} represents a paradigmatic shift. {\em Big Data} clearly distinguishes itself from its predecessors in definition and in possibility. But, despite its tremendous, paradigm-shifting potential, {\em Big Data} is still an evolution on the long history of symbolic representation. Like any such representation, it shows but a small sample of the real world, viewed through the distorted lens of various biases. Adding the aspects of velocity and variety expand our avenues of discovery, but they do not eliminate the need for establishing some sense of scientific integrity, even if the norms of integrity must adapt. To be fair, the argument against the {\em (n = all)} proposition comes mostly from the scientific community, whose entire existence relies on integrity. The business world offers a different context. Often, decision-makers must take actions while relying on nothing more than structured but easily fallible methods of analysis.\cite{Keystone} They try their best to produce reasonable insights with methods such as SWOT Analysis or Porter's Five Forces, because delivering timely, logical arguments often matters more than taking the time to find answers validated through scientific levels of scrutiny. In business, quickly finding reasonable answers often takes priority to slowly finding proven ones. Given their different priorities, businesses can perhaps afford to relax their standards of information integrity with {\em Big Data}, as long as they are cognizant of its inherent uncertainty. But it is this lack of cognizance that can lead people into the dangerous territory of making ill-advised decisions based on misleading data. In addition to clarifying what it means to go beyond {\em Lots of Data} to help people capitalize on the vast potential of {\em Big Data}, we hope to foster more sociotechnical research into what the dangerous territory of being incognizant looks like and how it can be avoided.
+
+
+
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{report} 
+
+\end{document}
