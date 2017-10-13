@@ -43,11 +43,11 @@ paper2:
    - Jones, Gabriel
    hid:
    - 104
-   title: Big Data and Poverty in Developing Countries
+   title: Big Data = Big Bias? Ethical Challenges of Big Data
    abstract: TBD
    url: https://github.com/bigdata-i523/hid104/paper2/paper2.pdf
    type: latex
-   status: 0%
+   status: 5%
 ```
 
 # Project 
