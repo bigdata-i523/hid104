@@ -19,9 +19,10 @@
 * 09/08/17 Downloaded ACM Templates
 * 09/22/17 Wrote paper 1 Abstract
 * 09/29/17 Revised paper 1 Abstract
-* 10/06/17 Wrote paper 1 Introduction and History of Data Section
-* 10/07/17 Wrote paper 1 Big Data vs All Data Section
-* 10/08/17 Wrote paper 1 Conclusion and Revised Paper
+* 10/05/17 Wrote paper 1 Introduction
+* 10/06/17 Wrote paper 1 History of Data Section and Big Data vs All Data Section
+* 10/07/17 Wrote paper 1 Conclusion
+* 10/08/17 Revised and submitted paper 1
 * 10/13/17 Removed Citation from Conclusion for paper 1
 * 10/13/17 Selected paper 2 topic
 
