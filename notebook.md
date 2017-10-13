@@ -17,7 +17,13 @@
 
 * 08/26/17 Selected paper 1 topic
 * 09/08/17 Downloaded ACM Templates
-* 09/22/17 Wrote Abstract
+* 09/22/17 Wrote paper 1 Abstract
+* 09/29/17 Revised paper 1 Abstract
+* 10/06/17 Wrote paper 1 Introduction and History of Data Section
+* 10/07/17 Wrote paper 1 Big Data vs All Data Section
+* 10/08/17 Wrote paper 1 Conclusion and Revised Paper
+* 10/13/17 Removed Citation from Conclusion for paper 1
+* 10/13/17 Selected paper 2 topic
 
 # Location
 
@@ -31,4 +37,6 @@
 * 09/01/17 Meeting: Attended class meeting for residential students
 * 09/08/17 Meeting: Attended class meeting for residential students
 * 09/15/17 Meeting: Attended class meeting for residential students
-* 08/22/17 Meeting: Attended class meeting for residential students
+* 09/22/17 Meeting: Attended class meeting for residential students
+* 09/29/17 Meeting: Attended class meeting for residential students
+* 10/13/17 Meeting: Attended class meeting for residential students
