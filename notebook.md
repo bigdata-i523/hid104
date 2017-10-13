@@ -23,7 +23,7 @@
 * 10/06/17 Wrote paper 1 History of Data Section and Big Data vs All Data Section
 * 10/07/17 Wrote paper 1 Conclusion
 * 10/08/17 Revised and submitted paper 1
-* 10/13/17 Removed Citation from Conclusion for paper 1
+* 10/13/17 Fixed citation and quotation issues with paper 1
 * 10/13/17 Selected paper 2 topic
 
 # Location
