@@ -1,0 +1,44 @@
+---
+owner:
+    hid: 104
+    name: Jones, Gabriel
+    url: https://github.com/bigdata-i523/hid104
+paper1:
+    abstract: 'We breifly analyze the history of data to show how having Lots of Data
+        hardly differs from data storage and analysis  in the early days of SQL, or
+        even before computers. We then explain how Big Data represents a paradigmatic
+        shift from conventional data analysis. We then begin to look at the potential
+        limits of Big Data to assert that this paradigmatic shift does not mean the
+        end of science. We conclude that  misunderstanding Big Data prevents organizations
+        from capitalizing on its potential and can lead them to spurious answers.
+
+        '
+    author:
+        - Jones, Gabriel
+    chapter: Theory
+    hid:
+        - 104
+    status: 100%
+    title: What Separates Big Data from Lots of Data?
+    type: latex
+    url: https://github.com/bigdata-i523/hid104/paper1/paper1.pdf
+paper2:
+    abstract: TBD
+    author:
+        - Jones, Gabriel
+    hid:
+        - 104
+    status: 5%
+    title: Big Data = Big Bias? Ethical Challenges of Big Data
+    type: latex
+    url: https://github.com/bigdata-i523/hid104/paper2/paper2.pdf
+project:
+    abstract: TBD
+    author:
+        - Jones, Gabriel
+    hid:
+        - 104
+    status: 0%
+    title: TBD
+    type: report
+    url: https://github.com/bigdata-i523/hid104/project/project.pdf
