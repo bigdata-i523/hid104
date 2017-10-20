@@ -24,7 +24,9 @@
 * 10/07/17 Wrote paper 1 Conclusion
 * 10/08/17 Revised and submitted paper 1
 * 10/13/17 Fixed citation and quotation issues with paper 1
-* 10/13/17 Selected paper 2 topic
+* 10/13/17 Posted paper 2 topic
+* 10/20/17 Addressed errors in paper 1
+* 10/20/17 Wrote review for classmate's paper 1
 
 # Location
 
