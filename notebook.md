@@ -27,6 +27,7 @@
 * 10/13/17 Posted paper 2 topic
 * 10/20/17 Addressed errors in paper 1
 * 10/20/17 Wrote review for classmate's paper 1
+* 10/20/17 Posted tentative final project topic
 
 # Location
 
