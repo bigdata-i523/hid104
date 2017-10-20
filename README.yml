@@ -2,7 +2,7 @@
 owner:
     hid: 104
     name: Jones, Gabriel
-    url: "https://github.com/bigdata-i523/hid104"
+    url: https://github.com/bigdata-i523/hid104
 paper1:
     abstract: >
         We breifly analyze the history of data to show how having Lots of Data
@@ -20,7 +20,7 @@ paper1:
     status: 100%
     title: What Separates Big Data from Lots of Data?
     type: latex
-    url: "https://github.com/bigdata-i523/hid104/paper1/paper1.pdf"
+    url: https://github.com/bigdata-i523/hid104/paper1/paper1.pdf
 paper2:
     abstract: >
         TBD
@@ -31,7 +31,7 @@ paper2:
     status: 5%
     title: "Big Data = Big Bias? Ethical Challenges of Big Data"
     type: latex
-    url: "https://github.com/bigdata-i523/hid104/paper2/paper2.pdf"
+    url: https://github.com/bigdata-i523/hid104/paper2/paper2.pdf
 project:
     abstract: TBD
     author:
@@ -41,4 +41,4 @@ project:
     status: 0%
     title: TBD
     type: report
-    url: "https://github.com/bigdata-i523/hid104/project/project.pdf"
+    url: https://github.com/bigdata-i523/hid104/project/project.pdf
