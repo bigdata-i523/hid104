@@ -28,6 +28,8 @@
 * 10/20/17 Addressed errors in paper 1
 * 10/20/17 Wrote review for classmate's paper 1
 * 10/20/17 Posted tentative final project topic
+* 10/27/17 Selected team member for paper 2
+* 10/27/17 Re-uploaded paper 1 to Turnitin
 
 # Location
 
