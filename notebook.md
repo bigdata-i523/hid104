@@ -7,7 +7,8 @@
 
 * 09/01/17 Read and watched videos in the Theory Introduction page
 * 09/15/17 Read and watched videos in the Theory Overview of Data Science page
-* 09/15/17 Downloaded and installed LaTex from https://miktex.org/download
+* 11/03/17 Read and watcehd under 3.10.1 Web Search and Text Mining 1 Topic
+
 
 # Practice
 
@@ -17,6 +18,7 @@
 
 * 08/26/17 Selected paper 1 topic
 * 09/08/17 Downloaded ACM Templates
+* 09/15/17 Downloaded and installed LaTex from https://miktex.org/download
 * 09/22/17 Wrote paper 1 Abstract
 * 09/29/17 Revised paper 1 Abstract
 * 10/05/17 Wrote paper 1 Introduction
