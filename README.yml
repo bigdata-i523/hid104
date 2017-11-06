@@ -22,15 +22,15 @@ paper1:
     type: latex
     url: https://github.com/bigdata-i523/hid104/paper1/paper1.pdf
 paper2:
-    review: Nov 6 2017
+    review: Nov 8 2017
     abstract: >
         TBD
     author:
         - Jones, Gabriel
     hid:
         - 104
-    status: 5%
-    title: "Big Data = Big Bias? Ethical Challenges of Big Data"
+    status: Nov 8 20117 95%
+    title: "Big Data = Big Bias? The Fallibility of Big Data"
     type: latex
     url: https://github.com/bigdata-i523/hid104/paper2/paper2.pdf
 project:
