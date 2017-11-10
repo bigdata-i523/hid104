@@ -41,9 +41,9 @@ paper2:
         principles of transparency, clear and appropriate objective definition, and 
         self-correcting feedback mechanisms.
     author:
-        - Jones, Gabriel
+        - Jones, Gabriel and Millard, Mathew
     hid:
-        - 104
+        - 104, 216
     status: Nov 8 17 100%
     title: "Big Data = Big Bias? The Fallibility of Big Data"
     type: latex
@@ -51,9 +51,9 @@ paper2:
 project:
     abstract: TBD
     author:
-        - Jones, Gabriel
+        - Jones, Gabriel and Millard, Mathew
     hid:
-        - 104
+        - 104, 216
     status: 0%
     title: TBD
     type: report
