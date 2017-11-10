@@ -22,7 +22,7 @@ paper1:
     type: latex
     url: https://github.com/bigdata-i523/hid104/paper1/paper1.pdf
 paper2:
-    review: Nov 8 2017
+    review: Nov 10 2017
     abstract: >
         Since its origins, Big Data has promised an unimaginable potential to revolutionize 
         the world. Scholars have wisely noted that it represents a paradigmatic shift from 
@@ -44,7 +44,7 @@ paper2:
         - Jones, Gabriel and Millard, Mathew
     hid:
         - 104, 216
-    status: Nov 8 17 100%
+    status: Nov 10 17 100%
     title: "Big Data = Big Bias? The Fallibility of Big Data"
     type: latex
     url: https://github.com/bigdata-i523/hid104/paper2/paper2.pdf
