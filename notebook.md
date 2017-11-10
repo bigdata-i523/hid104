@@ -32,7 +32,13 @@
 * 10/20/17 Posted tentative final project topic
 * 10/27/17 Selected team member for paper 2
 * 10/27/17 Re-uploaded paper 1 to Turnitin
-
+* 11/03/17 Conducted research for paper 2
+* 11/04/17 Wrote abstract and outline
+* 11/05/17 Completed several sections of paper 2
+* 11/06/17 Completed several sections of paper 2
+* 11/07/17 Completed draft of paper 2
+* 11/09/17 Completed final draft of paper 2
+* 11/10/17 Added citations and uploaded paper 2
 # Location
 
 * Address: Bloomington IN, 800 N Union St #408
