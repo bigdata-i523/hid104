@@ -51,3 +51,4 @@
 * 10/20/17 Meeting: Attended class meeting for residential students
 * 10/27/17 Meeting: Attended class meeting for residential students
 * 11/03/17 Meeting: Attended class meeting for residential students
+* 11/10/17 Meeting: Attended class meeting for residential students
