@@ -5,13 +5,15 @@ owner:
     url: https://github.com/bigdata-i523/hid104
 paper1:
     abstract: >
-        We breifly analyze the history of data to show how having Lots of Data
-        hardly differs from data storage and analysis  in the early days of SQL, or
-        even before computers. We then explain how Big Data represents a paradigmatic
-        shift from conventional data analysis. We then begin to look at the potential
-        limits of Big Data to assert that this paradigmatic shift does not mean the
-        end of science. We conclude that  misunderstanding Big Data prevents organizations
-        from capitalizing on its potential and can lead them to spurious answers.
+        We breifly analyze the history of data to show how having Lots
+        of Data hardly differs from data storage and analysis in the
+        early days of SQL, or even before computers. We then explain
+        how Big Data represents a paradigmatic shift from conventional
+        data analysis. We then begin to look at the potential limits
+        of Big Data to assert that this paradigmatic shift does not
+        mean the end of science. We conclude that misunderstanding Big
+        Data prevents organizations from capitalizing on its potential
+        and can lead them to spurious answers.
     author:
         - Jones, Gabriel
     chapter: Theory
@@ -24,22 +26,28 @@ paper1:
 paper2:
     review: Nov 10 2017
     abstract: >
-        Since its origins, Big Data has promised an unimaginable potential to revolutionize 
-        the world. Scholars have wisely noted that it represents a paradigmatic shift from 
-        conventional norms of data, but the public has quickly latched onto provocative but 
-        unrealistic narratives that deify big data as omniscient, infallible, and devoid 
-        of bias. Confiding in such narratives diminishes the integrity of credible science 
-        and poses serious ethical challenges, but these challenges are more likely overlooked 
-        because the very narratives seem to reject the need for ethical discussion. The authors 
-        argue that such blind optimism will cause irreversible damage to society if left 
-        unchecked. First we debunk the fallacious narratives people tend to tell about big 
-        data, offering a more realistic discussion of its merits and its limitations. 
-        We then explore how analytical or algorithmic bias and sampling bias, two problems 
-        that statisticians have faced since long before the onset of big data, present pitfalls 
-        for deriving knowledge from data. We examine how the ethical implications of these pitfalls 
-        can cause serious damage in society. We conclude that Big Data analysis must obey the 
-        principles of transparency, clear and appropriate objective definition, and 
-        self-correcting feedback mechanisms.
+        Since its origins, Big Data has promised an unimaginable
+        potential to revolutionize the world. Scholars have wisely
+        noted that it represents a paradigmatic shift from
+        conventional norms of data, but the public has quickly latched
+        onto provocative but unrealistic narratives that deify big
+        data as omniscient, infallible, and devoid of bias. Confiding
+        in such narratives diminishes the integrity of credible
+        science and poses serious ethical challenges, but these
+        challenges are more likely overlooked because the very
+        narratives seem to reject the need for ethical discussion. The
+        authors argue that such blind optimism will cause irreversible
+        damage to society if left unchecked. First we debunk the
+        fallacious narratives people tend to tell about big data,
+        offering a more realistic discussion of its merits and its
+        limitations.  We then explore how analytical or algorithmic
+        bias and sampling bias, two problems that statisticians have
+        faced since long before the onset of big data, present
+        pitfalls for deriving knowledge from data. We examine how the
+        ethical implications of these pitfalls can cause serious
+        damage in society. We conclude that Big Data analysis must
+        obey the principles of transparency, clear and appropriate
+        objective definition, and self-correcting feedback mechanisms.
     author:
         - Jones, Gabriel and Millard, Mathew
     hid:
@@ -47,6 +55,7 @@ paper2:
     status: Nov 10 17 100%
     title: "Big Data = Big Bias? The Fallibility of Big Data"
     type: latex
+    chapter: Theory
     url: https://github.com/bigdata-i523/hid104/paper2/paper2.pdf
 project:
     abstract: TBD
