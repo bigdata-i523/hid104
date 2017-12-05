@@ -22,7 +22,7 @@ paper1:
     status: Oct 28 17 100%
     title: What Separates Big Data from Lots of Data?
     type: latex
-    url: https://github.com/bigdata-i523/hid104/paper1
+    url: https://github.com/bigdata-i523/hid104/tree/master/paper1
 paper2:
     review: Nov 10 2017
     abstract: >
@@ -56,14 +56,36 @@ paper2:
     title: "Big Data = Big Bias? The Fallibility of Big Data"
     type: latex
     chapter: Theory
-    url: https://github.com/bigdata-i523/hid104/paper2
+    url: https://github.com/bigdata-i523/hid104/tree/master/paper2
 project:
-    abstract: TBD
+    abstract: >
+        Since its origins, Big Data has promised an unimaginable
+        potential to revolutionize the world. Scholars have wisely
+        noted that it represents a paradigmatic shift from
+        conventional norms of data, but the public has quickly latched
+        onto provocative but unrealistic narratives that deify big
+        data as omniscient, infallible, and devoid of bias. Confiding
+        in such narratives diminishes the integrity of credible
+        science and poses serious ethical challenges, but these
+        challenges are more likely overlooked because the very
+        narratives seem to reject the need for ethical discussion. The
+        authors argue that such blind optimism will cause irreversible
+        damage to society if left unchecked. First we debunk the
+        fallacious narratives people tend to tell about big data,
+        offering a more realistic discussion of its merits and its
+        limitations.  We then explore how analytical or algorithmic
+        bias and sampling bias, two problems that statisticians have
+        faced since long before the onset of big data, present
+        pitfalls for deriving knowledge from data. We examine how the
+        ethical implications of these pitfalls can cause serious
+        damage in society. We conclude that Big Data analysis must
+        obey the principles of transparency, clear and appropriate
+        objective definition, and self-correcting feedback mechanisms.
     author:
         - Jones, Gabriel and Millard, Mathew
     hid:
         - 104, 216
-    status: 0%
-    title: TBD
+    status: 95%
+    title: Big Bias? An Analysis of Google Search Suggestions
     type: report
-    url: https://github.com/bigdata-i523/hid104/project/project.pdf
+    url: https://github.com/bigdata-i523/hid104/tree/master/project
