@@ -8,6 +8,9 @@
 * 09/01/17 Read and watched videos in the Theory Introduction page
 * 09/15/17 Read and watched videos in the Theory Overview of Data Science page
 * 11/03/17 Read and watcehd under 3.10.1 Web Search and Text Mining 1 Topic
+* 11/18/17 Completed web search and text mining lectures
+* 11/20/17 Completed e-commerce and lifestyle lectures
+* 11/22/17 Completed health informatics case study lectures
 
 
 # Practice
@@ -39,6 +42,12 @@
 * 11/07/17 Completed draft of paper 2
 * 11/09/17 Completed final draft of paper 2
 * 11/10/17 Added citations and uploaded paper 2
+* 11/25/17 Researched data for final project
+* 11/27/17 Researched data for final project
+* 12/01/17 Implemented parsing functions for final project
+* 12/02/17 Wrote majority of code for final project
+* 12/03/17 Finished code for final project and began Jupyter notebook
+* 12/04/17 Completed jupyter notebook, revised code, made significant writing progress, and uploaded final project
 # Location
 
 * Address: Bloomington IN, 800 N Union St #408
@@ -58,3 +67,4 @@
 * 10/27/17 Meeting: Attended class meeting for residential students
 * 11/03/17 Meeting: Attended class meeting for residential students
 * 11/10/17 Meeting: Attended class meeting for residential students
+* 12/01/17 Meeting: Attended class meeting for residential students
