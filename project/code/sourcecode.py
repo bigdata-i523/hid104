@@ -9,7 +9,7 @@ from timeit import default_timer as timer
 
 
 #Step 2: Read Data from CSV and group into races
-file = open("Desktop/FA17/INFO-I423/Names_2010Census.csv", "r")
+file = open("projectdata.csv", "r")
 name_csv = csv.DictReader(file)
 
 name_lst = [] #This list will be used later
