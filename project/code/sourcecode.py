@@ -1,16 +1,22 @@
 #Step 1: Import modules (some of visualizations will use custom imports later)
-import requests, json, csv
+import requests, json, csv, urllib.request
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from math import pi
 from timeit import default_timer as timer
 
+#Step 2: Download and Read CSV Data from Github and group into races
 
+#This will download the data and write it as a file to the desktop
+resource = urllib.request.urlopen("https://raw.githubusercontent.com/bigdata-i523/hid104/master/project/projectdata.csv")
+out = open("projectdata.csv","wb")
+out.write(resource.read())
+out.close()
 
-#Step 2: Read Data from CSV and group into races
 file = open("projectdata.csv", "r")
 name_csv = csv.DictReader(file)
+file.close()
 
 name_lst = [] #This list will be used later
 
@@ -33,7 +39,6 @@ for index, row in enumerate(name_csv):
         name_race['pcthispanic']+=row['name']
         name_race['pcthispanic']+= ' '
 
-file.close()
 
 names = {k: v + 1 for v, k in enumerate(name_lst)}
 
@@ -41,6 +46,8 @@ name_race['pctwhite'] = name_race['pctwhite'].split()
 name_race['pctblack'] = name_race['pctblack'].split()
 name_race['pctapi'] = name_race['pctapi'].split()
 name_race['pcthispanic'] = name_race['pcthispanic'].split()
+
+print(name_race)
 
 name_counts = [len(name_race['pctwhite']), len(name_race['pctblack']), len(name_race['pctapi']), len(name_race['pcthispanic'])]
 
