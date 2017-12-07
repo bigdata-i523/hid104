@@ -108,15 +108,15 @@ Before we can test for algorithmic bias, we have to have a grasp or understandin
 
 \subsection{Support Vector Machines}
 
-A Support Vector Machine is a supervised learning model that is known for the analysis of data for classification and regression. This algorithm is much better at classifying problems that normal logistical regression and it always converges to a global minima when classifying data. However, this algorithm can be complex especially when the data isn't linearly separable.
+A Support Vector Machine is a supervised learning model that is known for the analysis of data for classification and regression. This algorithm is much better at classifying problems that normal logistical regression and it always converges to a global minima when classifying data. However, this algorithm can be complex especially when the data isn't linearly separable. In the case that the data set being used is non-separable, the data can be transformed using a kernel function, such as a log function in some cases, in order for the algorithm to fit the data and classify correctly. The main bias that we can see from this algorithm is in the case of it classifying data to the point where patterns form based on things like popularity and relevance which could lead to something similar to what we discussed in the case involving Dylann Roof. Since Support Vector Machines are supervised learning models, any bias can be accounted for in the manual make up of the model because it does need some direction. In that case, bias might come in the form of human error though.
 
 \subsection{Neural Networks}
 
-Neural Networks
+Neural Networks are algorithmic models in which weighted inputs are fed into a function to compute an output. In a predictive setting, Neural Networks are fairly flexible in structure which makes allows it to be applied in many scenarios. In this type of model, we can expect to utilize logic gates in order to understand how certain scenarios must be weighted to account for a specific outcome or result that we want. If an outcome relying on three variables hinges on a specific variable being untrue and requires at least one of the other variables to be true, we would assign a higher weight to the first variable than the other two because that one variable to ruin the outcome. We can see how this type of modeling can be used to model complex predictive problems and could possibly be used in a search engine if desired. Based on input strings that make up common and popular words and phrases, we could make an auto complete function using neural networks to put weights on certain inputs to predict the possible resulting desired search for the user. Unfortunately, placing weight on certain inputs and pieces of the function can inherit some bias along with it. Even if those weights aren't manually decided, popularity and relevance can have a large impact on calculation of weights which would still lead to some bias down the road. In the search engine example, this would lead to people being influenced to search something based on the beginning of their search query.
 
 \subsection{Naive Bayes}
 
-Naive Bayes
+The Naive Bayes classifier
 
 \subsection{How to  For Algorithmic Bias}
 
