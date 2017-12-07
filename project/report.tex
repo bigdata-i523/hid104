@@ -100,11 +100,27 @@ Sometimes, algorithmic bias can morph and distort opinions in ways that almost s
 
 About two to three years ago, a man named Dylann Roof shot and killed nine people in a church in Charleston, South Carolina. The interesting details hanging around this massacre to make it stand out were the people he shot and the line of reasoning he used to explain how he was eventually led to commit such an act. The attack was done on what was reported to be a predominantly black church which led people to label the offense as a hate crime. Although, Roof's explanation on what might have led him to that point is what makes this story stand out from other hate crimes. In an article that the National public radio published titled ``What Happened When Dylann Roof Asked Google For Information About Race?'' it was reported that Roof's defense had made a case that there was more to the act than just simple racism and white supremacy\cite{Hersher2017}. The argument that the internet had a direct influence on what Roof believed and that he was acting on the information he was being fed through other sources was being made. Roof elaborated on the subject and explained that it had all began with the growing popularity of the Trayvon Martin case. Trayvon Martin was an unarmed black teenager who was shot and killed in three to four years prior to the incident involving Roof. After researching the details of the case and coming to his own conclusions he states in a quote in the article ``this prompted me to type in the words 'black on White crime' into Google, and I have never been the same since that day''\cite{Hersher2017}. The article continues to dive deeper into what Roof might have encountered. Anyone who has encountered a search engine in general has been faced with the auto complete feature that provides calculated, popular options to give the user some direction. In this case, the potential algorithmic bias surrounding the racial tensions might have led Roof down the path of searching for examples of crime committed by people of color on white people. The National Public Radio itself reported that they tested out Google's search engine by typing out the beginning of the phrase Roof mentioned and they were prompted with the auto complete option of the exact phrase before they could even type in the word white\cite{Hersher2017}. Even today, you can perform the same experiment and come up with the same results.
 
-Unfortunately, the main factor in driving this algorithmic bias is popularity and relevance which are hard variables that are difficult to counter and account for in most cases. Which means the objective of removing the type of algorithmic bias that Dylann Roof encountered would be difficult and require a major change in how search suggestions and results are calculated. However, this needs to be discussed and changes need to be made or more people will continue to be influenced negatively by algorithmic bias which would put more lives at risk down the road. After all, Roof was only seventeen when he began down the line of thinking that led him to commit those murders. There are numerous children and young adults that have unlimited access to the internet and are wide open to the same influence. So, preventative measures need to be taken in order to assure that we do not see similar stories surface.
+Unfortunately, the main factor in driving this algorithmic bias is popularity and relevance which are hard variables that are difficult to counter and account for in most cases. Which means the objective of removing the type of algorithmic bias that Dylann Roof encountered would be difficult and require a major change in how search suggestions and results are calculated. However, this needs to be discussed and changes need to be made or more people will continue to be influenced negatively by algorithmic bias which would put more lives at risk down the road. After all, Roof was only seventeen when he began down the line of thinking that led him to commit those murders. There are numerous children and young adults that have unlimited access to the internet and are wide open to the same influence. So, preventative measures need to be taken in order to assure that we do not see similar stories surface. In order to get that done, there has to be some kind of analysis of bias within specific algorithms to understand them and create ways to account for this bias. If unchecked, not much can be done, but the knowledge from understanding the potential bias in these algorithms could prove invaluable.
 
-\section{Case studies in testing for algorithmic Bias}
+\section{Case Studies in Checking for Algorithmic Bias}
 
+Before we can test for algorithmic bias, we have to have a grasp or understanding on how many of the algorithms implemented in concepts such as prediction work. In many fields where predictive work is being done in research, there is a common use of natural language processing algorithms such as Support Vector Machines, Neural Networks, and Naive Bayes. Each algorithm uses a specific type of processing that makes it stand out from the others, but the different aspects to each come with advantages and drawbacks that make each one valuable in certain circumstances. However, it is the internal structure of what makes up the algorithm that allows for bias to get in.
 
+\subsection{Support Vector Machines}
+
+A Support Vector Machine is a supervised learning model that is known for the analysis of data for classification and regression. This algorithm is much better at classifying problems that normal logistical regression and it always converges to a global minima when classifying data. However, this algorithm can be complex especially when the data isn't linearly separable.
+
+\subsection{Neural Networks}
+
+Neural Networks
+
+\subsection{Naive Bayes}
+
+Naive Bayes
+
+\subsection{How to  For Algorithmic Bias}
+
+After getting to know what kind of algorithms we are working with, 
 
 \section{Our Case Study: Testing Google for Negative Search Suggestions Bias Against Certain Races}
 
@@ -120,20 +136,40 @@ Given that the central argument from our qualitative analysis of Big Data sugges
 
 \subsection{Hypotheses}
 
-Given the anecdotal evidence and from a history of racial and bias in the United States, we expected to see a bias toward and ethnic minorities. Specifically, we hypothesized the following:\newline
+Given the anecdotal evidence and from a history of racial and bias in the United States, we expected to see a bias toward and ethnic minorities. Specifically, we hypothesized the following: \\
 
 \vspace{2mm}
 
 {\em H1 Black names will, on average, have more negative word associations than white names.} \\
+
 \vspace{2mm}
+
 {\em H2 Latino and Hispanic names will, on average, have more negative word associations than white names.} \\
+
 \vspace{2mm}
+
 {\em H3 Asian and Pacific Islander names will, on average, have fewer negative word associations than white names.}
 \vspace{2mm}
 
 \subsection{Algorithm}
 
-All of the programming for this project was conducted with Python 3.5.2. A .csv file from the 2010 Census provided us with a list of 162,254 surnames. We read in the file using csv.DictReader and focused on columns including name and the race/ethnicity categories which included percentages of people with that surname that identify accordingly. Because of the increasing obscurity of names further down the list, we decided to use only the first 500 names. None of these 500 names were predominantly mixed race or predominantly Native American, so these categories were excluded from the data. We created a dictionary with the other categories, {\em pctwhite, pctblack, pctapi, pcthispanic} and each of the 500 names into the appropriate categories using a series of {\em for loops}. From there, 
+The coding for our analysis was conducted with Python 3.5.2. The necessary import modules include: {\em requests, json, csv, urllib.rquest, matplotlib, pandas, numpy, and timeit}, all of which we installed using pip install. We gathered the data for our project from the website for the 2010 Census. Their .csv provided us with a list of 162,254 surnames. We read in the file, which is posted in our github account, using csv.DictReader. We isolate the name and race/ethnicity columns. For each name, the race/ethnicity categories include the percentage of people that identify as part of a particular race or ethnicity. Because increasingly obscure names are likely less identifiable, we decided to use only the first 500 names. None of these 500 names were predominantly mixed race or predominantly Native American, so these categories were excluded from our. We created a dictionary with the analyzable categories, {\em pctwhite, pctblack, pctapi, pcthispanic} and sorted the 500 names into the appropriate categories using a series of {\em for loops} that checked for the highest percentage. 
+
+We then move to the main goal of the experiment: capturing Google search suggestions. Using Mozilla Firefox 5.0 as a user agent, we use a url that automatically outputs a two-dimensional list with the search term and ten Google suggestions. We then define a function to manipulate the url to modify the for each search term and for every name. When, for a given name, a search suggestion contains one of the target words described in the methodology section (arrest, crime, homicide, etc.), the function adds a point to the name's key. We run the function five times for each target word, creating five dictionaries that store names as key and the number of negative word associations as values. We add the five dictionaries to a list that we can iterate through. This section involves a lot of searching, we use timeit to make sure it runs efficiently. It typically takes about 200 seconds to run with 8 gigabytes of ram and an Intel i7 processor with 500 names, so we estimate that this step would take about 65,000 seconds or over 18 hours to run with the full data.
+
+Now that the search results are appropriately organized by name and by search term, we need to calculate the aggregate scores for each race/ethnicity category. We create dictionaries for each of the four race/ethnicity categories, with search terms as keys and values defaulted to zero. We then define a function that will appropriately fill the values so that we know how many negative word associations go along with each search term for each race. As inputs, the function takes the name of the racial/ethnic category, the name of the dictionary for that category (from the four we just created), and the list containing the five search term dictionaries we created earlier. The function uses three for loops to iterate through the various dictionaries and lists to match names with their racial categories and add the values to the scores accordingly. We run this function four times for each category.
+
+To calculate the aggregate word associations for each racial category, all we need to do is sum the values of each key for each dictionary. However, to be completely sure that the function for the previous section worked properly, we implement a set of for loops to calculate the aggregates instead of just summing the dictionary values. We create a dictionary with keys set to the racial category and values defaulted to zero and allow the for loops to calculate the proper scores. We also create a dictionary with racial categories as keys and empty lists as values. We append the numerical values for each word association to the empty list. With the data arranged as such in raw form, we are now able to analyze more measures of central tendency, including the median and the 1st and 3rd quarterlies. This data arrangement enables us to create the box plot displayed in the results section.
+
+As a final step for the data preparation, we take the averages of all the aggregate data so that we know how many negative word associations go along with each name on average. We now have all the data summarized and organized as needed and can move on to to creating a bar chart, a box plot, and a series of radar charts using matplotlib. Details on how to recreate these visuals are available on the Jupyter notebook on our github project folder.
+
+
+
+
+
+
+
+
 
 \subsection{Results}
 
