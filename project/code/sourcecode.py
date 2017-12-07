@@ -119,14 +119,13 @@ pcthispanic_stats = {'arrest':0, 'murder':0, 'homicide':0,'crime':0,'prison':0}
 term_lst = ['arrest','murder','homicide','crime','prison']
 
 #Define a function to calculate results for every race/ethnicity and for every search criterion
-def stat_stuffer(race_name, pct_stats, avg_dict):
-    for i in range(0, len(avg_dict)):
-        for datum in avg_dict[i]:
+def stat_stuffer(race_name, pct_stats, avg_list):
+    for i in range(0, len(avg_list)):
+        for datum in avg_list[i]:
             for name in name_race[race_name]:
                 if datum == name:
-                    pct_stats[term_lst[i]]+=avg_dict[i][datum]
-
-
+                    pct_stats[term_lst[i]]+=avg_list[i][datum]
+                    
 #Run the function for every race/ethnicity
 stat_stuffer('pctwhite', pctwhite_stats, avg_data)
 
