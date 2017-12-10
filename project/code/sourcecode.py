@@ -124,9 +124,8 @@ def stat_stuffer(race_name, pct_stats, avg_list):
             for name in name_race[race_name]:
                 if datum == name:
                     pct_stats[term_lst[i]].append(avg_list[i][datum])
+
                     
-
-
                     
 #Run the function for every race/ethnicity
 stat_stuffer('pctwhite', pctwhite_stats, avg_data)
@@ -143,7 +142,7 @@ stats_lst = [pctwhite_stats, pctblack_stats, pctapi_stats, pcthispanic_stats]
 #5b Write the results to a csv file
 
 csv = open("resultsdata.csv", "w")
-columnTitleRow = "race, arrest, murder, homicide, murder, homicide\n"
+columnTitleRow = "race, arrest, murder, homicide, crime, prison\n"
 csv.write(columnTitleRow)
 
 for i in range(0, len(stats_lst)):
@@ -163,7 +162,7 @@ csv.close()
 #5c Average all the results
 
 #One dictionary stores just raw data which will be used to create a box plot and to write to csv
-name_race_raw = ['pctwhite':[], 'pctblack':[], 'pctapi':[], 'pcthispanic':[]]
+name_race_raw = {'pctwhite':[], 'pctblack':[], 'pctapi':[], 'pcthispanic':[]}
 name_race_avg = {'pctwhite':0, 'pctblack':0, 'pctapi':0, 'pcthispanic':0}
 
 for race_name in name_race:
