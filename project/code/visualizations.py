@@ -17,7 +17,6 @@ fig1 = plt.figure(1, figsize=(9, 6))
 
 fig1.savefig('fig1.png', bbox_inches='tight')
 
-plt.show()
 
 #Step 7 Create Box Plot Visualizations
 
@@ -81,8 +80,6 @@ plt.title('Nevative Word Associations by Race/Ethnicity')
 # Save the figure
 fig2.savefig('fig2.png', bbox_inches='tight')
 
-plt.show()
-
 
 #Step 8 Create Multiple Radar Visualizations
 # Set data frame
@@ -132,8 +129,8 @@ def make_spider(row, title, color):
 
 # ------- PART 2: Apply to all individuals
 # initialize the figure
-my_dpi=96
-fig3 = plt.figure(figsize=(1000/my_dpi, 1100/my_dpi), dpi=my_dpi)
+my_dpi=300
+fig3 = plt.figure(figsize=(3000/my_dpi, 3300/my_dpi), dpi=my_dpi)
  
 # Create a color palette:
 my_palette = plt.cm.get_cmap("Set2", len(df.index))
@@ -144,7 +141,6 @@ for row in range(0, len(df.index)):
 
 fig3.savefig('fig3.png', bbox_inches='tight')
 
-plt.show()
 
 #Step 9 Create Joint Radar Visualization
 
@@ -182,6 +178,7 @@ for i in range(0,len(df.index)):
     ax.plot(angles, values, color=my_palette(i), linewidth=1, linestyle='solid', label="group A")
     ax.fill(angles, values, color=my_palette(i), alpha=0.1)
 
+plt.title("Negative word assotiations by name and race \n")
+
 plt.savefig('fig4.png')
 
-plt.show()
