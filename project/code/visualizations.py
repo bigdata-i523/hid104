@@ -85,11 +85,11 @@ fig2.savefig('fig2.png', bbox_inches='tight')
 # Set data frame
 df = pd.DataFrame({
 'group': ['White ('+str(name_counts[0]) + ')', 'Black ('+str(name_counts[1]) + ')', 'Asian/Pacific ('+str(name_counts[2]) + ')', 'Hispanic/Latino ('+str(name_counts[3]) + ')'],
-'arrest': [pctwhite_stats['arrest'], pctblack_stats['arrest'], pctapi_stats['arrest'], pcthispanic_stats['arrest']],
-'murder': [pctwhite_stats['murder'], pctblack_stats['murder'], pctapi_stats['murder'], pcthispanic_stats['murder']],
-'homicide': [pctwhite_stats['homicide'], pctblack_stats['homicide'], pctapi_stats['homicide'], pcthispanic_stats['homicide']],
-'crime': [pctwhite_stats['crime'], pctblack_stats['crime'], pctapi_stats['crime'], pcthispanic_stats['crime']],
-'prison': [pctwhite_stats['prison'], pctblack_stats['prison'], pctapi_stats['prison'], pcthispanic_stats['prison']]
+'arrest': [pctwhite_avg['arrest'], pctblack_avg['arrest'], pctapi_avg['arrest'], pcthispanic_avg['arrest']],
+'murder': [pctwhite_avg['murder'], pctblack_avg['murder'], pctapi_avg['murder'], pcthispanic_avg['murder']],
+'homicide': [pctwhite_avg['homicide'], pctblack_avg['homicide'], pctapi_avg['homicide'], pcthispanic_avg['homicide']],
+'crime': [pctwhite_avg['crime'], pctblack_avg['crime'], pctapi_avg['crime'], pcthispanic_avg['crime']],
+'prison': [pctwhite_avg['prison'], pctblack_avg['prison'], pctapi_avg['prison'], pcthispanic_avg['prison']]
 })
 
 # number of variables

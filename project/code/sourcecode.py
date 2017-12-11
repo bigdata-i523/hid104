@@ -109,13 +109,32 @@ avg_data = [arrest_dict, murder_dict, homicide_dict, crime_dict, prison_dict]
 #5a Calculate search data results by race/ethnicity category
 
 pctwhite_stats = {'arrest':[], 'murder':[], 'homicide':[],'crime':[],'prison':[]}
+pctwhite_avg = {'arrest':[], 'murder':[], 'homicide':[],'crime':[],'prison':[]}
 
 pctblack_stats = {'arrest':[], 'murder':[], 'homicide':[],'crime':[],'prison':[]}
+pctblack_avg = {'arrest':[], 'murder':[], 'homicide':[],'crime':[],'prison':[]}
 
 pctapi_stats = {'arrest':[], 'murder':[], 'homicide':[],'crime':[],'prison':[]}
+pctapi_avg = {'arrest':[], 'murder':[], 'homicide':[],'crime':[],'prison':[]}
 
 pcthispanic_stats = {'arrest':[], 'murder':[], 'homicide':[],'crime':[],'prison':[]}
+pcthispanic_avg = {'arrest':[], 'murder':[], 'homicide':[],'crime':[],'prison':[]}
 
+
+#Run the function for every race/ethnicity
+stat_stuffer('pctwhite', pctwhite_stats, avg_data)
+stat_stuffer('pctwhite', pctwhite_avg, avg_data)
+
+stat_stuffer('pctblack', pctblack_stats, avg_data)
+stat_stuffer('pctblack', pctblack_avg, avg_data)
+
+stat_stuffer('pctapi', pctapi_stats, avg_data)
+stat_stuffer('pctapi', pctapi_avg, avg_data)
+
+stat_stuffer('pcthispanic', pcthispanic_stats, avg_data)
+stat_stuffer('pcthispanic', pcthispanic_avg, avg_data)
+
+stats_lst = [pctwhite_stats, pctblack_stats, pctapi_stats, pcthispanic_stats]
 term_lst = ['arrest','murder','homicide','crime','prison']
 
 #Define a function to calculate results for every race/ethnicity and for every search criterion
@@ -128,39 +147,8 @@ def stat_stuffer(race_name, pct_stats, avg_list):
 
                     
                     
-#Run the function for every race/ethnicity
-stat_stuffer('pctwhite', pctwhite_stats, avg_data)
 
-stat_stuffer('pctblack', pctblack_stats, avg_data)
-
-stat_stuffer('pctapi', pctapi_stats, avg_data)
-
-stat_stuffer('pcthispanic', pcthispanic_stats, avg_data)
-
-stats_lst = [pctwhite_stats, pctblack_stats, pctapi_stats, pcthispanic_stats]
-
-
-#5b Write the results to a csv file
-
-csv_data = open("resultsdata.csv", "w")
-columnTitleRow = "race, arrest, murder, homicide, crime, prison\n"
-csv_data.write(columnTitleRow)
-
-for i in range(0, len(stats_lst)):
-    race = i
-    dict_values = [] #We create a list to store the values so that we can index them
-    for value in stats_lst[i].values():
-        dict_values.append(value)
-    for j in range(0, len(dict_values[0])):
-        row = str(i) + ", "
-        for k in range(len(dict_values)):
-            row += str(dict_values[k][j]) + ", "
-        row += "\n"
-        csv_data.write(row)
-
-csv_data.close()
-
-#5c Average all the results
+#5b Average all the results
 
 #One dictionary stores just raw data which will be used to create a box plot and to write to csv
 name_race_raw = {'pctwhite':[], 'pctblack':[], 'pctapi':[], 'pcthispanic':[]}
@@ -177,24 +165,85 @@ for race_name in name_race:
 
 #Calculate average aggregate associations for every race/ethnicity
 for race_avg in name_race_avg:
-    name_race_avg[race_avg] = name_race_avg[race_avg] / sum(name_counts)
+    name_race_avg[race_avg] = name_race_avg[race_avg] / len(name_race_raw[race_avg])
 
 #Calculate average associations for every race/ethnicity by search criteria
-for stat in pctwhite_stats:
-    pctwhite_stats[stat] = sum(pctwhite_stats[stat]) / name_counts[0]
+for avg in pctwhite_avg:
+    pctwhite_avg[avg] = sum(pctwhite_avg[avg]) / (name_counts[0]*5)
 
-for stat in pctblack_stats:
-    pctblack_stats[stat] = sum(pctblack_stats[stat]) / name_counts[1]
+for avg in pctblack_avg:
+    pctblack_avg[avg] = sum(pctblack_avg[avg]) / (name_counts[1]*5)
 
-for stat in pctapi_stats:
-    pctapi_stats[stat] = sum(pctapi_stats[stat]) / name_counts[2]
+for avg in pctapi_avg:
+    pctapi_avg[avg] = sum(pctapi_avg[avg]) / (name_counts[2]*5)
 
-for stat in pcthispanic_stats:
-    pcthispanic_stats[stat] = sum(pcthispanic_stats[stat]) / name_counts[3]
+for avg in pcthispanic_avg:
+    pcthispanic_avg[avg] = sum(pcthispanic_avg[avg]) / (name_counts[3]*5)
 
-##results_file = open("resultsdata.csv")
-##results_data = csv.DictReader(results_file)
-##
-##for row in results_data:
-##    print(row["race"]) 
+
+#6 Statistical analysis from CSV file
+
+#6a Write the results to a csv file
+
+csv_data = open("resultsdata.csv", "w")
+columnTitleRow = "race,arrest,murder,homicide,crime,prison,total,average\n"
+csv_data.write(columnTitleRow)
+
+for i in range(0, len(stats_lst)):
+    race = i
+    dict_values = [] #We create a list to store the values so that we can index them
+    for value in stats_lst[i].values():
+        dict_values.append(value)
+    for j in range(0, len(dict_values[0])):
+        sum_lst = []
+        row = str(i) + ","
+        for k in range(len(dict_values)):
+            row += str(dict_values[k][j]) + ","
+            sum_lst.append(dict_values[k][j])
+        row += str(sum(sum_lst)) + ","
+        row += str(sum(sum_lst)/len(sum_lst)) + "\n"
+        csv_data.write(row)
+
+csv_data.close()
+
+#6b Run 2-sample t-tests to compare calculate p values
+
+#Open the resultsdata with csv.DictReader
+results_file = open("resultsdata.csv")
+results_data = csv.DictReader(results_file)
+
+#Define empty lists for each race
+white_stats = []
+black_stats = []
+api_stats = []
+hispanic_stats = []
+
+#Use if logic to sort the total row by race
+for row in results_data:
+    if row["race"] == "0":
+        white_stats.append(row["total"])
+    elif row["race"] == "1":
+        black_stats.append(row["total"])
+    elif row["race"] == "2":
+        api_stats.append(row["total"])
+    else:
+        hispanic_stats.append(row["total"])
+
+
+results_file.close()
+
+#Cast all the values as arrays with floats
+black_stats = np.array(black_stats).astype(np.float)
+white_stats = np.array(white_stats).astype(np.float)
+api_stats = np.array(api_stats).astype(np.float)
+hispanic_stats = np.array(hispanic_stats).astype(np.float)
+
+
+#Run the 2-sample t-test to compare each data sample
+stats.ttest_ind(white_stats, black_stats)
+stats.ttest_ind(white_stats, api_stats)
+stats.ttest_ind(white_stats, hispanic_stats)
+stats.ttest_ind(black_stats, api_stats)
+stats.ttest_ind(black_stats, hispanic_stats)
+stats.ttest_ind(api_stats, hispanic_stats) 
 
