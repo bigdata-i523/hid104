@@ -116,11 +116,11 @@ Neural Networks are algorithmic models in which weighted inputs are fed into a f
 
 \subsection{Naive Bayes}
 
-The Naive Bayes classifier is a probabilistic model that applies Bayes' Theorem that makes predictions based on a set of training data consisting of features. However, Naive Bayes places the assumption on the features that each one is independent of the other. Although this stipulation does well enough in real word situations, this assumption can hold it back from working in more complex situations where features are highly dependent on one another.
+The Naive Bayes classifier is a probabilistic model that applies Bayes' Theorem that makes predictions based on a set of training data consisting of predetermined features. However, Naive Bayes places the assumption on the features that each one is independent of the other. Although this stipulation does well enough in real word situations, this assumption can hold it back from working in more complex situations where features are highly dependent on one another. In the world we live in today, we rarely encounter situations where large data sets, especially in big data settings, where the features involved are independent. This strong assumption of independence here is where the source of a decent amount of bias could come from when using this algorithm. Because of this, there is a limitation to how well one can make predictions in more complex situations. After all, Naive Bayes is a probabilistic model, but probabilities tend to rely on a multitude of varying factors which may include the influences of other features involved.  With this in mind, we can see how the results may be skewed or flawed, but how exactly does that introduce bias? Other biases can come within and there are undoubtedly some in this algorithm, but another major source of bias can come after the work is done. A critical piece comes from the analytic interpretation of the results. If the probabilities are flawed, then the conclusions made from the results could be flawed as well. In this case, we would call it analytical bias. Even though this type of bias isn't an internal problem of the algorithm, it is a byproduct of it in the end result.
 
-\subsection{How to Check For Algorithmic Bias}
+\subsection{How to Check and Account For Algorithmic Bias}
 
-After getting to know what kind of algorithms we are working with, 
+After getting to know what kind of algorithms we are working with and what kind of biases can arise from them, our attention should naturally gravitate towards ways we can check and account for these biases. 
 
 \section{Our Case Study: Testing Google for Negative Search Suggestions Bias Against Certain Races}
 
