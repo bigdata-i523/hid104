@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from math import pi
+from scipy import stats
 from timeit import default_timer as timer
 
 #Step 2: Download and Read CSV Data from Github and group into races
@@ -141,9 +142,9 @@ stats_lst = [pctwhite_stats, pctblack_stats, pctapi_stats, pcthispanic_stats]
 
 #5b Write the results to a csv file
 
-csv = open("resultsdata.csv", "w")
+csv_data = open("resultsdata.csv", "w")
 columnTitleRow = "race, arrest, murder, homicide, crime, prison\n"
-csv.write(columnTitleRow)
+csv_data.write(columnTitleRow)
 
 for i in range(0, len(stats_lst)):
     race = i
@@ -155,9 +156,9 @@ for i in range(0, len(stats_lst)):
         for k in range(len(dict_values)):
             row += str(dict_values[k][j]) + ", "
         row += "\n"
-        csv.write(row)
+        csv_data.write(row)
 
-csv.close()
+csv_data.close()
 
 #5c Average all the results
 
@@ -191,4 +192,9 @@ for stat in pctapi_stats:
 for stat in pcthispanic_stats:
     pcthispanic_stats[stat] = sum(pcthispanic_stats[stat]) / name_counts[3]
 
+##results_file = open("resultsdata.csv")
+##results_data = csv.DictReader(results_file)
+##
+##for row in results_data:
+##    print(row["race"]) 
 
