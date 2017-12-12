@@ -48,6 +48,10 @@
 * 12/02/17 Wrote majority of code for final project
 * 12/03/17 Finished code for final project and began Jupyter notebook
 * 12/04/17 Completed jupyter notebook, revised code, made significant writing progress, and uploaded final project
+* 12/06/17 Made significant writing progress
+* 12/07/17 Attended office hours
+* 12/10/17 Completed statistical analysis and revised sourcecode and jupyter notebook
+* 12/11/17 Made significant writing progress, revised paper, and completed final uploads
 # Location
 
 * Address: Bloomington IN, 800 N Union St #408
