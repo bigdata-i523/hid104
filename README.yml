@@ -62,45 +62,31 @@ paper2:
 project:
     duplicate: True
     abstract: >
-        Since its origins, Big Data has promised an unimaginable
-        potential to revolutionize the world. Scholars have wisely
-        noted that it represents a paradigmatic shift from
-        conventional norms of data, but the public has quickly latched
-        onto provocative but unrealistic narratives that deify big
-        data as omniscient, infallible, and devoid of bias. Confiding
-        in such narratives diminishes the integrity of credible
-        science and poses serious ethical challenges, but these
-        challenges are more likely overlooked because the very
-        narratives seem to reject the need for ethical discussion. The
-        authors argue that such blind optimism will cause irreversible
-        damage to society if left unchecked. First we debunk the
-        fallacious narratives people tend to tell about big data,
-        offering a more realistic discussion of its merits and its
-        limitations.  We then explore how analytical or algorithmic
-        bias and sampling bias, two problems that statisticians have
-        faced since long before the onset of big data, present
-        pitfalls for deriving knowledge from data. We examine how the
-        ethical implications of these pitfalls can cause serious
-        damage in society. We determine that effective, credible, and 
-        ethically sound Big Data analysis must obey the principles of 
-        transparency, clear and appropriate objective definition, and 
-        self-correcting feedback mechanisms. We examine case studies 
-        where academicians and businesses have tested algorithms to 
-        study how well they exhibit these principles. We then 
-        implement our own test to check for potential algorithmic 
-        bias in Google. Based on evidence that certain individuals, 
-        including Dylan Roof, were corrupted in part by Google queries 
-        allegedly bias against minority groups, we hypothesize that 
-        Google's algorithms systematically exhibit biases against 
-        minority groups. We test this hypothesis by examining how Google 
-        search suggestions associate certain negative words with names 
-        that typically belong to minority groups. We conclude that while 
-        our study alone cannot prove or disprove the hypothesis, owing 
-        to the fallibility of big data analysis which we cover in detail, 
-        the evidence in our analysis contradicts our hypothesis, thus 
-        supporting the null hypothesis that no systematic bias in 
-        exhibited. We discuss what this could mean for future studies of 
-        potential algorithmic bias in Google.
+        While Big Data can make the world a better place, blind optimism 
+        in its infallibility can cause irreversible damage to society if 
+        left unchecked. With the mission of ensuring accountability, we 
+        debunk the fallacious narratives people tend to tell about Big Data, 
+        offering a more realistic discussion of its merits and its 
+        limitations. We then explore how analytical or algorithmic bias and 
+        sampling bias, two problems that statisticians have faced since long 
+        before the onset of Big Data, present pitfalls for deriving knowledge 
+        from data. We examine how the ethical implications of these pitfalls 
+        can cause serious damage in society. We determine that effective, 
+        credible, and ethically sound Big Data analysis must obey the 
+        principles of transparency, clear and appropriate objective 
+        definition, and self-correcting feedback mechanisms. We examine case 
+        studies where academicians and businesses have tested algorithms to study
+        how well they exhibit these principles. We then implement our own test to 
+        check for potential algorithmic bias in Google. Based on evidence that 
+        certain individuals have been corrupted in part by Google searches allegedly 
+        bias against racial minorities, we hypothesize that Google's algorithms 
+        systematically exhibit biases against minority groups. We test this hypothesis 
+        by examining how Google search suggestions associate certain negative words 
+        with names that typically belong to minority groups. We conclude that while 
+        our study alone cannot prove or disprove our argument, the evidence in our 
+        analysis contradicts our hypotheses, thus suggesting that no systematic bias 
+        is exhibited. We discuss end by discussing what the results could mean for 
+        future studies of potential algorithmic bias in Google.
     author:
         - Jones, Gabriel
         - Millard, Mathew
