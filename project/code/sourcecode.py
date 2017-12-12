@@ -166,16 +166,16 @@ for race_avg in name_race_avg:
 
 #Calculate average associations for every race/ethnicity by search criteria
 for avg in pctwhite_avg:
-    pctwhite_avg[avg] = sum(pctwhite_avg[avg]) / (name_counts[0])
+    pctwhite_avg[avg] = sum(pctwhite_avg[avg]) / name_counts[0]
 
 for avg in pctblack_avg:
-    pctblack_avg[avg] = sum(pctblack_avg[avg]) / (name_counts[1])
+    pctblack_avg[avg] = sum(pctblack_avg[avg]) / name_counts[1]
 
 for avg in pctapi_avg:
-    pctapi_avg[avg] = sum(pctapi_avg[avg]) / (name_counts[2])
+    pctapi_avg[avg] = sum(pctapi_avg[avg]) / name_counts[2]
 
 for avg in pcthispanic_avg:
-    pcthispanic_avg[avg] = sum(pcthispanic_avg[avg]) / (name_counts[3])
+    pcthispanic_avg[avg] = sum(pcthispanic_avg[avg]) / name_counts[3]
 
 
 #6 Statistical analysis from CSV file
