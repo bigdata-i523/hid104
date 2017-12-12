@@ -93,7 +93,7 @@ project:
     hid:
         - 104
         - 216
-    status: 90%
+    status: 100%
     title: Big Bias? An Analysis of Google Search Suggestions
     type: report
     url: https://github.com/bigdata-i523/hid104/tree/master/project
