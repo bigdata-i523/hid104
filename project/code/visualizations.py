@@ -1,4 +1,4 @@
-#Step 6 Create Bar Chart Visualization
+#Step 7 Create Bar Chart Visualization
 
 import matplotlib.pyplot as plt; plt.rcdefaults()
 
@@ -18,7 +18,7 @@ fig1 = plt.figure(1, figsize=(9, 6))
 fig1.savefig('fig1.png', bbox_inches='tight')
 
 
-#Step 7 Create Box Plot Visualizations
+#Step 8 Create Box Plot Visualizations
 
 import matplotlib as mpl
 mpl.use('agg')
@@ -81,8 +81,8 @@ plt.title('Nevative Word Associations by Race/Ethnicity')
 fig2.savefig('fig2.png', bbox_inches='tight')
 
 
-#Step 8 Create Multiple Radar Visualizations
-# Set data frame
+#Step 9 Create Multiple Radar Visualizations
+# Arrabge tghe data into a data frame
 df = pd.DataFrame({
 'group': ['White ('+str(name_counts[0]) + ')', 'Black ('+str(name_counts[1]) + ')', 'Asian/Pacific ('+str(name_counts[2]) + ')', 'Hispanic/Latino ('+str(name_counts[3]) + ')'],
 'arrest': [pctwhite_avg['arrest'], pctblack_avg['arrest'], pctapi_avg['arrest'], pcthispanic_avg['arrest']],
@@ -142,7 +142,7 @@ for row in range(0, len(df.index)):
 fig3.savefig('fig3.png', bbox_inches='tight')
 
 
-#Step 9 Create Joint Radar Visualization
+#Step 10 Create Joint Radar Visualization
 
 # What will be the angle of each axis in the plot? (we divide the plot / number of variable)
 angles = [n / float(N) * 2 * pi for n in range(N)]

@@ -120,20 +120,6 @@ pctapi_avg = {'arrest':[], 'murder':[], 'homicide':[],'crime':[],'prison':[]}
 pcthispanic_stats = {'arrest':[], 'murder':[], 'homicide':[],'crime':[],'prison':[]}
 pcthispanic_avg = {'arrest':[], 'murder':[], 'homicide':[],'crime':[],'prison':[]}
 
-
-#Run the function for every race/ethnicity
-stat_stuffer('pctwhite', pctwhite_stats, avg_data)
-stat_stuffer('pctwhite', pctwhite_avg, avg_data)
-
-stat_stuffer('pctblack', pctblack_stats, avg_data)
-stat_stuffer('pctblack', pctblack_avg, avg_data)
-
-stat_stuffer('pctapi', pctapi_stats, avg_data)
-stat_stuffer('pctapi', pctapi_avg, avg_data)
-
-stat_stuffer('pcthispanic', pcthispanic_stats, avg_data)
-stat_stuffer('pcthispanic', pcthispanic_avg, avg_data)
-
 stats_lst = [pctwhite_stats, pctblack_stats, pctapi_stats, pcthispanic_stats]
 term_lst = ['arrest','murder','homicide','crime','prison']
 
@@ -146,7 +132,18 @@ def stat_stuffer(race_name, pct_stats, avg_list):
                     pct_stats[term_lst[i]].append(avg_list[i][datum])
 
                     
-                    
+#Run the function for every race/ethnicity
+stat_stuffer('pctwhite', pctwhite_stats, avg_data)
+stat_stuffer('pctwhite', pctwhite_avg, avg_data)
+
+stat_stuffer('pctblack', pctblack_stats, avg_data)
+stat_stuffer('pctblack', pctblack_avg, avg_data)
+
+stat_stuffer('pctapi', pctapi_stats, avg_data)
+stat_stuffer('pctapi', pctapi_avg, avg_data)
+
+stat_stuffer('pcthispanic', pcthispanic_stats, avg_data)
+stat_stuffer('pcthispanic', pcthispanic_avg, avg_data)                
 
 #5b Average all the results
 
@@ -169,16 +166,16 @@ for race_avg in name_race_avg:
 
 #Calculate average associations for every race/ethnicity by search criteria
 for avg in pctwhite_avg:
-    pctwhite_avg[avg] = sum(pctwhite_avg[avg]) / (name_counts[0]*5)
+    pctwhite_avg[avg] = sum(pctwhite_avg[avg]) / (name_counts[0])
 
 for avg in pctblack_avg:
-    pctblack_avg[avg] = sum(pctblack_avg[avg]) / (name_counts[1]*5)
+    pctblack_avg[avg] = sum(pctblack_avg[avg]) / (name_counts[1])
 
 for avg in pctapi_avg:
-    pctapi_avg[avg] = sum(pctapi_avg[avg]) / (name_counts[2]*5)
+    pctapi_avg[avg] = sum(pctapi_avg[avg]) / (name_counts[2])
 
 for avg in pcthispanic_avg:
-    pcthispanic_avg[avg] = sum(pcthispanic_avg[avg]) / (name_counts[3]*5)
+    pcthispanic_avg[avg] = sum(pcthispanic_avg[avg]) / (name_counts[3])
 
 
 #6 Statistical analysis from CSV file
@@ -189,6 +186,8 @@ csv_data = open("resultsdata.csv", "w")
 columnTitleRow = "race,arrest,murder,homicide,crime,prison,total,average\n"
 csv_data.write(columnTitleRow)
 
+row = ""
+
 for i in range(0, len(stats_lst)):
     race = i
     dict_values = [] #We create a list to store the values so that we can index them
@@ -196,13 +195,14 @@ for i in range(0, len(stats_lst)):
         dict_values.append(value)
     for j in range(0, len(dict_values[0])):
         sum_lst = []
-        row = str(i) + ","
+        row += str(i) + ","
         for k in range(len(dict_values)):
             row += str(dict_values[k][j]) + ","
             sum_lst.append(dict_values[k][j])
         row += str(sum(sum_lst)) + ","
         row += str(sum(sum_lst)/len(sum_lst)) + "\n"
-        csv_data.write(row)
+
+csv_data.write(row)
 
 csv_data.close()
 
