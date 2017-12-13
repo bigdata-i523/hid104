@@ -60,7 +60,6 @@ paper2:
     chapter: Theory
     url: https://github.com/bigdata-i523/hid104/tree/master/paper2
 project:
-    duplicate: True
     abstract: >
         While Big Data can make the world a better place, blind optimism 
         in its infallibility can cause irreversible damage to society if 
