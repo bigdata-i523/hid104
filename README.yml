@@ -21,7 +21,6 @@ paper1:
         - 104
     status: Oct 28 17 100%
     title: What Separates Big Data from Lots of Data?
-    type: latex
     url: https://github.com/bigdata-i523/hid104/tree/master/paper1
 paper2:
     review: Nov 10 2017
@@ -56,7 +55,6 @@ paper2:
         - 216
     status: Nov 10 17 100%
     title: "Big Data = Big Bias? The Fallibility of Big Data"
-    type: latex
     chapter: Theory
     url: https://github.com/bigdata-i523/hid104/tree/master/paper2
 project:
